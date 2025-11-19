@@ -18,7 +18,7 @@ export function Contact() {
             Get In <span className="gradient-text">Touch</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-12">
-            I'm always open to discussing new opportunities and interesting projects.
+            I&apos;m always open to discussing new opportunities and interesting projects.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
@@ -77,7 +77,8 @@ export function Contact() {
             </motion.a>
             
             <motion.a
-              href={portfolioData.resume}
+              href="/resume.pdf"
+              download="Sergio_Miranda_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="card text-center group hover:border-primary-500 transition-colors md:col-span-2"
@@ -86,7 +87,7 @@ export function Contact() {
             >
               <FileText className="w-8 h-8 mx-auto mb-4 text-primary-600 dark:text-primary-400" />
               <h3 className="text-xl font-semibold mb-2">Resume</h3>
-              <p className="text-gray-600 dark:text-gray-400">Download PDF</p>
+              <p className="text-gray-600 dark:text-gray-400">Download Resume</p>
             </motion.a>
           </div>
           

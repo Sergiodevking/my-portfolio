@@ -7,17 +7,19 @@ const categoryLabels = {
   frontend: 'Frontend',
   backend: 'Backend',
   cloud: 'Cloud & DevOps',
-  tools: 'Tools & Others',
+  erp: 'ERP/Platforms',
+  ai: 'AI & Machine Learning',
+  tools: 'Tools',
 }
 
-const levelColors = {
+const levelColors: Record<'expert' | 'advanced' | 'intermediate', string> = {
   expert: 'bg-green-500',
   advanced: 'bg-blue-500',
   intermediate: 'bg-yellow-500',
 }
 
 export function Skills() {
-  const categories = ['frontend', 'backend', 'cloud', 'tools'] as const
+  const categories = ['frontend', 'backend', 'cloud', 'erp', 'ai', 'tools'] as const
   
   return (
     <section id="skills" className="section-container">
@@ -69,7 +71,7 @@ export function Skills() {
                       </div>
                       <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                         <motion.div
-                          className={`h-2 rounded-full ${levelColors[skill.level]}`}
+                          className={`h-2 rounded-full ${levelColors[skill.level as keyof typeof levelColors]}`}
                           initial={{ width: 0 }}
                           whileInView={{ width: skill.level === 'expert' ? '90%' : skill.level === 'advanced' ? '75%' : '60%' }}
                           viewport={{ once: true }}

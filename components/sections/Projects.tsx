@@ -52,7 +52,7 @@ export function Projects() {
                 </p>
                 
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.techStack.slice(0, 4).map((tech, techIndex) => (
+                  {project.techStack.map((tech, techIndex) => (
                     <span
                       key={techIndex}
                       className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-xs font-medium"
@@ -60,11 +60,6 @@ export function Projects() {
                       {tech}
                     </span>
                   ))}
-                  {project.techStack.length > 4 && (
-                    <span className="px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded-full text-xs">
-                      +{project.techStack.length - 4}
-                    </span>
-                  )}
                 </div>
                 
                 <div className="flex space-x-4">

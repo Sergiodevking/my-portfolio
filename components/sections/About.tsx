@@ -57,7 +57,7 @@ export function About() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mt-8"
             >
-              <strong>What I'm looking for:</strong> {portfolioData.about.lookingFor}
+              <strong>What I&apos;m looking for:</strong> {portfolioData.about.lookingFor}
             </motion.p>
           </div>
         </motion.div>
