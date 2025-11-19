@@ -77,7 +77,8 @@ export function Contact() {
             </motion.a>
             
             <motion.a
-              href={portfolioData.resume}
+              href="/resume.pdf"
+              download="Sergio_Miranda_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="card text-center group hover:border-primary-500 transition-colors md:col-span-2"
@@ -86,7 +87,7 @@ export function Contact() {
             >
               <FileText className="w-8 h-8 mx-auto mb-4 text-primary-600 dark:text-primary-400" />
               <h3 className="text-xl font-semibold mb-2">Resume</h3>
-              <p className="text-gray-600 dark:text-gray-400">Download PDF</p>
+              <p className="text-gray-600 dark:text-gray-400">Download Resume</p>
             </motion.a>
           </div>
           

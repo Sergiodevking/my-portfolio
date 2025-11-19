@@ -7,17 +7,19 @@ const categoryLabels = {
   frontend: 'Frontend',
   backend: 'Backend',
   cloud: 'Cloud & DevOps',
-  tools: 'Tools & Others',
+  erp: 'ERP/Platforms',
+  ai: 'AI & Machine Learning',
+  tools: 'Tools',
 }
 
 const levelColors = {
   expert: 'bg-green-500',
   advanced: 'bg-blue-500',
-  intermediate: 'bg-yellow-500',
+  // intermediate: 'bg-yellow-500',
 }
 
 export function Skills() {
-  const categories = ['frontend', 'backend', 'cloud', 'tools'] as const
+  const categories = ['frontend', 'backend', 'cloud', 'erp', 'ai', 'tools'] as const
   
   return (
     <section id="skills" className="section-container">

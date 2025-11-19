@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Sergio Miranda | Senior Full Stack Engineer',
-  description: 'Senior Full Stack Engineer with 10+ years of experience in JavaScript/TypeScript, React, Vue, Node.js, AWS, NetSuite, and microservices architecture. Based in Quito, Ecuador.',
+  description: 'Senior Full Stack Engineer with 10+ years of experience in JavaScript/TypeScript, React, React Native, Vue, Node.js, AWS, NetSuite, and microservices architecture. Based in Quito, Ecuador.',
   keywords: ['Sergio Miranda', 'Full Stack Engineer', 'Senior Developer', 'JavaScript', 'TypeScript', 'React', 'Vue', 'Node.js', 'Nest.js', 'AWS', 'NetSuite', 'microservices', 'Quito', 'Ecuador'],
 }
 

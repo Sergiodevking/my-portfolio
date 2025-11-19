@@ -57,12 +57,12 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            {portfolioData.skills.slice(0, 4).map((skill, index) => (
+            {['JavaScript / TypeScript', 'React / Next.js', 'Node.js / Nest.js / Express', 'Python / Django / Flask'].map((skillName, index) => (
               <span
                 key={index}
                 className="px-4 py-2 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium"
               >
-                {skill.name}
+                {skillName}
               </span>
             ))}
           </motion.div>
