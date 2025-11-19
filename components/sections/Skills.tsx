@@ -15,7 +15,7 @@ const categoryLabels = {
 const levelColors: Record<'expert' | 'advanced' | 'intermediate', string> = {
   expert: 'bg-green-500',
   advanced: 'bg-blue-500',
-  intermediate: 'bg-yellow-500',
+  // intermediate: 'bg-yellow-500',
 }
 
 export function Skills() {
