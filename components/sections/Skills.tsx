@@ -12,7 +12,7 @@ const categoryLabels = {
   tools: 'Tools',
 }
 
-const levelColors: Record<'expert' | 'advanced' | 'intermediate', string> = {
+const levelColors: Record<'expert' | 'advanced', string> = {
   expert: 'bg-green-500',
   advanced: 'bg-blue-500',
   // intermediate: 'bg-yellow-500',
@@ -71,7 +71,7 @@ export function Skills() {
                       </div>
                       <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                         <motion.div
-                          className={`h-2 rounded-full ${levelColors[skill.level as keyof typeof levelColors]}`}
+                          className={`h-2 rounded-full ${levelColors[skill.level as keyof typeof levelColors] || 'bg-yellow-500'}`}
                           initial={{ width: 0 }}
                           whileInView={{ width: skill.level === 'expert' ? '90%' : skill.level === 'advanced' ? '75%' : '60%' }}
                           viewport={{ once: true }}
