@@ -23,8 +23,8 @@ export const portfolioData = {
   location: 'Quito, Ecuador',
   email: 'sergio.miranda0715@gmail.com',
   phone: '+593 99 621 6177',
-  github: 'https://github.com/sergiomiranda',
-  linkedin: 'https://www.linkedin.com/in/sergio-miranda-bb2768265',
+  github: 'https://github.com/AspiringDeveloper0730',
+  linkedin: 'https://www.linkedin.com/in/sergio-miranda-dev',
   resume: '/resume.pdf',
   
   about: {
